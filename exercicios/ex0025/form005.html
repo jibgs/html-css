@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        fieldset {
+            width: 200px;
+            background-color: rgba(73, 29, 231, 0.197);
+            border: none;
+            border-radius: 3%;
+        }
+        fieldset>legend:hover {
+            color: blue;
+            font-weight: bolder;
+        }
+        div:hover {
+            font-weight: bold;
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<h1>Exemplo de Formulário</h1>
+<form action="cadastro.php" method="get" autocomplete="on">
+    <fieldset>
+        <legend>Sexo</legend> <!--Rádio-->
+        <input type="radio" name="sxluz" id="isxmasc"><label for="isxmasc">Masculino</label>
+        <input type="radio" name="sxluz" id="isxfem"><label for="isxfem">Feminino</label>
+    </fieldset>
+    <fieldset>
+        <legend>Esportes favoritos</legend><!--Checkbox-->
+        <div><input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut" checked>Futebol</label><br></div>
+        <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">Voleybol</label><br>
+        <input type="checkbox" name="esbask" id="iesbask"> <label for="iesbask">Basketbol</label><br>
+        <input type="checkbox" name="escri" id="iescri"> <label for="iescri" checked>Cricket</label><br>
+    </fieldset>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form>
+</body>
+</html>
