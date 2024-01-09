@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../back-print.jpg);
+    }
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+    main::after {
+        content: 'Página criada por por Oskar Aglio';
+        text-decoration: overline;
+    }
+    main h1 {
+        text-shadow: none;
+    }
+    img#cel {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    img#print {display: block;}
+
+}
+
+@media screen and (min-width: 768px) {/* Tablet*/
+    body {
+        background-image: url(../back-tablet.jpg);
+    }
+    img#cel {display: none;}
+    img#tablet {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    img#print {display: none;}
+}
+
+@media screen and (min-width: 992px) and (maax-width: 1200px){/* Desktop*/
+    body {
+        background-image: url(../back-pc.jpg);
+    }
+    img#cel {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    img#print {display: none;}
+}
+
+@media screen and (min-width: 1200px) {/* Tv´s*/
+    body {
+        background-image: url(../back-tv.jpg);
+    }
+    main {
+        background-color: rgba(169, 167, 167, 0.523);
+        
+    }
+    img#cel {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+    img#print {display: none;}
+}
