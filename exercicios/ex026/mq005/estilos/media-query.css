@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    span#burger {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display: inline-block;
+        
+        
+    }
+    menu > ul > li > a {
+        background-color: rgb(34, 33, 33);
+    }
+    main {
+        width: 768px;
+    }
+}
